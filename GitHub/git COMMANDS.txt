@@ -1,0 +1,57 @@
+
+need to do fork before pull request
+
+
+===================
+-- Merge
+===================
+
+git checkout master
+git pull
+git merge desenv
+
+sent to server
+git add *
+git push
+
+
+===================
+-- Merge and conflit
+===================
+resolver the confliht with the tools you like.
+
+git add app.js
+git commit -m " merge"
+git push
+
+
+========================
+-- UNDO
+========================
+git rebase --abort
+git rebase
+
+
+========================
+-- check-in 
+========================
+git push origin master
+
+
+create a new branch
+git checkout -b marys-feature master
+
+commit the branch
+git push -u origin marys-feature
+
+========================
+--log
+========================
+git log --pretty=oneline
+
+
+========================
+--create new branch
+========================
+
+git branch hello-world

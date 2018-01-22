@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=0fKg7e37bQE
+https://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/
+
+
+install
+https://www.atlassian.com/git/tutorials/install-git
+
+
+modularition
+https://blog.angular-university.io/introduction-to-es6-modularity-the-jspm-package-manager-and-the-systemjs-loader/

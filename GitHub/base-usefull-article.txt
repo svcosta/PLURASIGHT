@@ -1,0 +1,26 @@
+https://guides.github.com/activities/hello-world/
+
+--git workflow
+
+https://www.atlassian.com/git/tutorials/comparing-workflows
+
+--link monstro
+https://blog.axosoft.com/gitflow/
+
+
+--pull request (the best site)
+https://confluence.atlassian.com/bitbucketserver/using-pull-requests-in-bitbucket-server-776639997.html
+
+
+
+video classs
+https://thenewboston.com/videos.php?cat=70
+https://thenewboston.com/videos.php?cat=80&video=19738
+
+
+stop here
+https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
+
+read these
+https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
