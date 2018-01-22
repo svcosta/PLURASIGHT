@@ -1,0 +1,42 @@
+to install a server
+npm install webpack-dev-server --save
+
+loader
+npm install babel-core babel-loader --save-dev
+npm install --save-dev babel-preset-es2015
+
+-minify
+webpack -p
+
+strip
+npm install strip-loader --save-dev
+
+http
+npm install http-server --save
+npm install http-server --save-dev
+
+
+geral works
+npm install http-server -g
+
+map and minify
+webpack-dev-server -d -p
+
+======================
+CSS
+=====================
+npm install css-loader style-loader --save-dev
+
+install SSAS
+npm install sass-loader --save-dev
+
+npm install extract-text-webpack-plugin --save-dev
+npm install less url-loader file-loader exports-loader extract-text-webpack-plugin
+
+ "webpack": "^3.6.0"
+
+
+npm install url-loader --save-dev
+
+npm install angular webpack babel-loader -D
+npm install raw-loader --save -dev
