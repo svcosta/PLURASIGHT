@@ -1,0 +1,31 @@
+
+/*
+Em primeiro lugar, é muito importante para qualquer sistema de grid redefinir o box model. Por padrão, o navegador não inclui padding e border dentro da 
+largura e altura declarada para o elemento. Isso não é bom para a responsividade. Felizmente, isso pode ser corrigido definindo a propriedade box-sizing 
+para border-box para as linhas e colunas.
+*/
+*{
+    -webkit-box-sizing: border-box; /*chrome*/
+    -moz-box-sizing: border-box; /*fire fox*/
+    box-sizing: border-box; /*default*/
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.father{   
+  width: 50%;
+  background-color: #ffffcc;
+  height: 80px;
+}
+
+.child{                     
+  border: 10px gray solid; /*now this value will respect the value of its father*/
+  background-color:blue;  
+  width: 50%;
+  height: 80px;
+  }
+

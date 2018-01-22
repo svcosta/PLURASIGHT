@@ -1,0 +1,30 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: gray;
+}
+
+.menu{ 
+    list-style: none;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    width: 180px;
+    padding: 3px 0 0 10px;
+    border-bottom: 5px solid black;
+    color: black;
+    margin:5px;
+    background-color: #cccc99;
+    text-align: center;
+    border-left: red solid 5px;
+}
+
+.menu li:hover{
+    background-color: #cc9999; 
+}
+
+.menu li a:visited{
+    color: black;
+}

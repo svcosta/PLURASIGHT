@@ -1,0 +1,180 @@
+/*body{
+    padding: 0px;
+    margin: 0px;        
+}
+
+#banner{
+    background-image: url("images/banner.jpg");  
+    width: 780px;
+    height: 227px;
+    float: left; 
+    margin: 15px 0 15px 0;   
+}
+
+#banner2{  
+    float: left;
+    margin: 15px 0 0 15px;   
+    background-color: aqua;
+    box-sizing: border-box;       
+  
+}
+
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px; 
+    justify-content: center;     
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*/
+
+
+/*
+Em primeiro lugar, é muito importante para qualquer sistema de grid redefinir o box model. Por padrão, o navegador não inclui padding e border dentro da 
+largura e altura declarada para o elemento. Isso não é bom para a responsividade. Felizmente, isso pode ser corrigido definindo a propriedade box-sizing 
+para border-box para as linhas e colunas.
+*/
+*{
+   box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 15 0 0 0px;
+}
+
+
+#banner{
+    background-image: url("images/banner.jpg");  
+    width: 780px;
+    height: 227px;    
+    float: left;
+}
+
+
+/*
+A fim de alinhar as colunas horizontalmente, sistemas de grid irão flutuar as colunas. Isso significa que você precisa limpar os elementos que flutuam sobre a 
+linha para manter a estrutura do layout. Aqui é onde o clearfix entra:
+*/
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table; 
+}
+
+.row:after {
+  clear: both;
+}
+
+/*
+Aqui, as colunas recebem uma posição relativa para permitir que qualquer conteúdo em posição absoluta dentro da coluna possa ser posicionado em relação a ela. 
+As colunas então flutuam a esquerda para o alinhamento horizontal, o que fará com que o elemento se torne display: block mesmo se ele não começou dessa forma.
+*/
+.column {
+  position: relative;
+  float: left;
+}
+
+/*
+  Gutters ajudam criar a separação entre as colunas para uma maior legibilidade e estética. Existem dois tipos de abordagem quando falamos em gutters; 
+  definindo paddings dentro de cada coluna ou margem esquerda baseada em porcentagens para cada coluna.
+  Eu prefiro a última abordagem, porque ela facilita gutters responsivas que irão permanecer em relação as colunas e a janela de exibição como um todo 
+  em diferentes tamanhos de tela. Ela também permite que você defina paddings adicionais para as colunas para uma maior flexibilidade. A maior vantagem 
+  de gutters baseadas em paddings é em como eles simplificam cálculos para a largura das colunas, que ficará evidente na próxima seção.
+
+  Utilizando a abordagem de margens baseadas em porcentagem, nós podemos ter como alvo colunas que são um irmão adjacente a uma coluna precedente. 
+  Isso irá criar uma margem esquerda para cada coluna, exceto a primeira, que nós vamos definir em 1.6% usando a propriedade margin-left:
+
+
+  mr = mp / mc
+  Onde:
+  mr = margem em porcentagem<br /> 
+  mp = margem em pixel<br /> 
+  mc = máximo de colunas
+
+*/
+.column + .column {
+  margin-left: 0.8%;  /*1.6%*/
+}
+
+
+.column-1 {
+  width: 6.86666666667%; 
+}
+
+.column-2 {
+  width: 15.3333333333%;  
+}
+
+.column-3 {
+  width: 23.8%;
+}
+
+.column-4 {
+  width: 32.2666666667%;  
+  
+}
+
+.column-5 {
+  width: 40.7333333333%;
+}
+
+.column-6 {
+  width: 49.2%;
+  background-color: blue; 
+}
+
+.column-7 {
+  width: 57.6666666667%;
+}
+
+.column-8 {
+  width: 66.1333333333%;
+}
+
+.column-9 {
+  width: 74.6%;
+}
+
+.column-10 {
+  width: 83.0666666667%;
+}
+
+.column-11 {
+  width: 91.5333333333%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

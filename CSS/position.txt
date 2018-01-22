@@ -1,0 +1,13 @@
+static: positon default
+
+relative: position relative its positon. any element will fit
+in the gap on left, right, top or bottom.
+
+fixed: very easy, the element is fixed on view point on
+body element.
+
+absolute: the element is relative its ancestors.
+the position related its father.
+
+boxing
+https://tableless.com.br/entendendo-sistemas-de-grid-css-do-zero/

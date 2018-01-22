@@ -1,0 +1,55 @@
+﻿
+body { 
+    background-color:#cccc99;  
+    /*font-size: 200px;     */
+}
+
+
+/*descedant selector*/
+div p  {
+    color:blue;
+}
+
+/*child selector*/
+div > p{
+      color:red;
+}
+
+
+/*attribute selector*/
+img[alt=space]{
+    padding: 0px;
+}
+
+/*psuedo class*/
+a:visited{
+    color: green;
+}
+
+/*div{
+    font-size: 1em;
+}*/
+
+p{
+    font-size: 1em;
+}
+
+
+/*
+Different Units:
+
+“Ems” (em): The “em” is a scalable unit that is used in web document media. An em is equal to the current font-size, for instance, 
+if the font-size of the document is 12pt, 1em is equal to 12pt. Ems are scalable in nature, so 2em would equal 24pt, .5em would equal 
+6pt, etc. Ems are becoming increasingly popular in web documents due to scalability and their mobile-device-friendly nature.
+
+Pixels (px): Pixels are fixed-size units that are used in screen media (i.e. to be read on the computer screen). One pixel is equal to one
+ dot on the computer screen (the smallest division of your screen’s resolution). Many web designers use pixel units in web documents in order 
+ to produce a pixel-perfect representation of their site as it is rendered in the browser. One problem with the pixel unit is that it does not 
+ scale upward for visually-impaired readers or downward to fit mobile devices.
+
+Points (pt): Points are traditionally used in print media (anything that is to be printed on paper, etc.). One point is equal to 1/72 of an inch. 
+Points are much like pixels, in that they are fixed-size units and cannot scale in size.
+
+Percent (%): The percent unit is much like the “em” unit, save for a few fundamental differences. First and foremost, the current font-size is
+ equal to 100% (i.e. 12pt = 100%). While using the percent unit, your text remains fully scalable for mobile devices and for accessibility.
+*/

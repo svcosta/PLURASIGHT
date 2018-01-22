@@ -1,0 +1,25 @@
+﻿@import url("style2.css");
+
+/*the local style rule is more import than import files style rules, but if you set import! in the first file
+those rules will be in the browser.*/
+
+/*specificity 2 (p more div)*/
+div p {
+    background-color: gray;
+}
+
+/*the most import specificity by Id, just style inline is more stronger then id*/
+#ruleId{
+    background-color:purple;
+}
+
+/*specificity 1 (only p)*/
+p{
+    background-color: green;
+    font-size: 22px;
+}
+
+/*All elements into this div will be effected*/
+div{
+    font-size: 8px;
+}

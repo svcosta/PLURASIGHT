@@ -1,0 +1,30 @@
+﻿body{
+    padding: 0px;
+    margin:0px;
+}
+
+#header{
+    height: 100px;
+    text-align: center;   
+}
+
+#links{    
+    float: left;
+    width: 100px;  
+}
+
+#content{
+    float: left;
+    width: 600px;
+}
+
+#authorinfo{ 
+    float: left;
+    width: 300px;
+
+}
+#footer{
+    clear: both;
+    text-align:center;
+    bottom: 0px;
+}

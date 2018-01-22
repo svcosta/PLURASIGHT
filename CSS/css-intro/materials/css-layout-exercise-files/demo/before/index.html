@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Put Your HTML in a Box</title>
+   <style>
+        .container {
+            position: relative;          
+        }
+
+        .topLeft {
+           position: absolute;
+           top:16px;
+           left: 15px;
+           size: 18px;
+        }
+        .bottomRight{
+          
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        .topRight{
+            position: absolute;
+            top:16px;
+            right: 16px;            
+        }
+
+        .bottomLeft{
+            position: absolute;
+            bottom: 0px;
+            left:15px;
+        }
+
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            text-align: center;
+            /*background-color: palevioletred;*/
+            width: 100%;          
+        }
+
+        .leftMiddle{
+            position:absolute;
+            top:50%;
+            left: 16px;        
+        }
+
+        .rigthMiddle{
+            position: absolute;
+            top: 50%;
+            right: 16px;
+        }
+
+        .centerTop{
+            position: absolute;
+            top: 16px;
+            width: 100%;
+            text-align: center;
+            left: 0;
+        }
+
+        .centerBottom{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+        }
+
+        img { 
+            width: 100%;
+            height: auto;          
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <img src="dublin.jpg"  alt="Norway">
+        <div class="topLeft">Hello world</div>
+        <div class="bottomRight">Bottom Right</div>
+        <div class="topRight">Top right</div>
+        <div class="bottomLeft">bottom left</div>
+        <div class="center">Center</div>
+        <div class="centerTop">top center</div>
+        <div class="centerBottom">bottom center</div>
+        <div class="leftMiddle">left center</div>
+        <div class="rigthMiddle">Rigth Middle</div>
+    </div>
+</body>
+</html>
