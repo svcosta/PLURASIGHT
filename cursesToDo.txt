@@ -1,0 +1,4 @@
+https://app.pluralsight.com/player?course=entity-framework-applications-integration-testing&author=michael-perry&name=entity-framework-applications-integration-testing-m0&clip=0&mode=live
+
+https://www.pluralsight.com/paths/mvc5
+https://www.pluralsight.com/paths/understanding-devops
